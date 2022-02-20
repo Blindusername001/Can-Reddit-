@@ -86,3 +86,24 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6C_CNN_LSTM_Predictions_for_BERT3_data.ipynb
 
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6D_CNN_LSTM_Predictions_for_BERT4_data.ipynb
+
+
+### Step 7: Performance estimation and data visualizations
+
+1. From each CNN-LSTM prediction, the root mean squared error was calculated to check how the prediction accuracy was.
+
+
+2. To have a practical comparison, two scenarios were formed and calculations were made to check to see which datasets would provide better profits if stock market investments were made using predictions from the different models. To contain the number of variables and models, the average profit by investing in all five stocks were calculated for data from each of the BERT Models.
+
+The following section describes the two scenarios considered,
+Scenario 1:
+This scenario assumes a moderately experienced investor who does both buying and short selling of stocks. The investor would initially invest a sum of $100. Each day the investor decides using the predictions for the next day’s closing price. 
+- If the predicted closing price for day n+1 is greater than day n, then the investor buys the stock at the current day’s closing price
+- If the predicted closing price for day n+1 is less than day n, then the investor borrows the stock at the current day’s (day n) closing price and settles the borrowed stocks at the end of day n+1. This is nothing but a short sale. If the prediction is right, the investor earns the difference but if the prediction is wrong and the closing price increases the next day, the investor loses the difference.
+- The profit and loss are cumulative across the entire timeline (i.e.) if the initial $100 increases to $120 by day 10, then the next move (buying or short selling) will involve $120.
+
+Scenario 2:
+This scenario assumes a novice investor who only buys the stock if the predicted price for day n+1 is higher than the closing price for day n. Like scenario 1, the profit and loss are cumulative across the entire timeline.
+We calculated the average profit the investor would make under each scenario by investing $100 in each stock using sentiments from each BERT Model.
+
+
