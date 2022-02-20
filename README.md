@@ -8,4 +8,13 @@ This study looked at how the investor sentiment from the largest investment comm
 
 ## STEPS
 
+In summary the steps involve,
+ - Extracting required data from Reddit and Twitter
+ - Preparing the extracted data so it can be used with BERT transformer
+ - Use different variations of BERT transformer to extract daily sentiments from Reddit and Twitter
+ - Extract and prepare technical data for selected stocks (stocks selected for price predictions)
+ - Build a CNN-LSTM model and tune it to find the best hyperparameters
+ - Use the CNN-LSTM model to predict the next day stock prices by using (technical stock data + sentiments) from previous day
+
+
 ### Step 1: Data Extraction
