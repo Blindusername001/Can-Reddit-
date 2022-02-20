@@ -66,3 +66,10 @@ _Gao, T. & Chai, Y., 2018. Improving stock closing price prediction using recurr
 
 The python code for this part can be seen in the below link,
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F4A_Stock_technical_data.ipynb_
+
+
+### Step 5: CNN-LSTM Model and tuning its hyperparameters 
+
+From various recent studies it was seen that a combination of CNN-LSTM models performed best in stock price prediction problems. So a parameterized CNN-LSTM model was created using the Keras module in python. GridSearchCV module from scikit-learn python library was used to find the best hyperparameters for the CNN-LSTM model. This code can be viewed in,
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F5A_Hyperparameter%20tuning%20for%20each%20stock.ipynb_
