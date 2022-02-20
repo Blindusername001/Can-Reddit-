@@ -36,6 +36,9 @@ _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-pred
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1B_Extracting_data_from_twitter.ipynb_
 
 
+<br />
+
+
 ### Step 2: Data Preparation
 
 <br />
@@ -49,6 +52,9 @@ In order to extract sentiments from Reddit and Twitter comments for each of the 
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2A_Prepare_reddit_data_for_BERT.ipynb_
 
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2B_Prepare_twitter_data_for_BERT.ipynb_
+
+<br />
+
 
 ### Step 3: Preparation of BERT model and sentiment classification of comments
 
@@ -82,6 +88,9 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3C_Bert_sentiment_analysis_Sentiment140.ipynb
 
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3D_finBERT_sentiment_analysis.ipynb_
+
+
+<br />
 
 
 ### Step 4: Preparation of technical stock data
@@ -119,6 +128,9 @@ From various recent studies it was seen that a combination of CNN-LSTM models pe
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F5A_Hyperparameter%20tuning%20for%20each%20stock.ipynb_
 
 _Note: This jupyter notebook is huge and hence may not open on git-hub interface. It is best to download this and view on your local machine._
+
+<br />
+
 
 ### Step 6: Predictiing next day stock prices with CNN-LSTM
 
