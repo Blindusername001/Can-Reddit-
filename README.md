@@ -73,3 +73,16 @@ _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-pred
 From various recent studies it was seen that a combination of CNN-LSTM models performed best in stock price prediction problems. So a parameterized CNN-LSTM model was created using the Keras module in python. GridSearchCV module from scikit-learn python library was used to find the best hyperparameters for the CNN-LSTM model. This code can be viewed in,
 
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F5A_Hyperparameter%20tuning%20for%20each%20stock.ipynb_
+
+
+### Step 6: Predictiing next day stock prices with CNN-LSTM
+
+Since we derived everyday sentiments from four BERT models, we have four sets of data [sentiment + technical indicator] for each of the five chosen stocks. The CNN-LSTM model was used with the best parameters found from step 5 and used to predict next day stock prices for each of the five stocks. These can be viewed in the following links,
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6A_CNN_LSTM_Predictions_for_BERT1_data.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6B_CNN_LSTM_Predictions_for_BERT2_data.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6C_CNN_LSTM_Predictions_for_BERT3_data.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6D_CNN_LSTM_Predictions_for_BERT4_data.ipynb
