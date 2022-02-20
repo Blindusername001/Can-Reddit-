@@ -42,6 +42,7 @@ The BASE BERT UNCASED model from huggingface python library was used for this. B
 
 
 References mentioned in the table:
+
 _Kaggle, 2019. Twitter US Airline Sentiment. [Online]. Available at: https://www.kaggle.com/crowdflower/twitter-airline-sentiment?select=Tweets.csv [Accessed 23 November 2021]._
 _Go, A., Bhayani, R. & Huang, L., n.d. Sentiment140. [Online]. Available at: http://help.sentiment140.com/for-students [Accessed 22 November 2021]._
 
@@ -57,4 +58,9 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3D_finBERT_sentiment_analysis.ipynb_
 
 
+### Step 4: Preparation of technical stock data
+In order to predict stock prices, along with the sentiments, a stock's technical data was also used. A total of 16 technical indicators were used. The indicators and their definitions are given in the below image. An important point to notice here is that the log return of previous day is also taken as one the technical inputs. Since stock prices are non-stationary it is a best practice to use the log returns instead of the raw previous day prices. The log return makes the stock price stationary. 
+
+The different formulae for the indicators were taken from the following research papaer,
+_Gao, T. & Chai, Y., 2018. Improving stock closing price prediction using recurrent neural network and technical indicators. Neural computation, 30(10), pp. 2833-2854._
 
