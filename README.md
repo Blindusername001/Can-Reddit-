@@ -18,3 +18,30 @@ In summary the steps involve,
 
 
 ### Step 1: Data Extraction
+
+1. Data from Reddit was collected from the community r/wallstreetbets using PMAW library in python. PMAW extracts Reddit data from pushshift prohject which archives Reddit data close to real-time. Though Reddit's own API can be used to extract data directly from Reddit, the rate limit imposed by Reddit makes it impossbile to extract a large amount of data in a time efficient manner. The python code for Reddit data extraction can be seen in,
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1A_Extracting_data_from_reddit.ipynb_
+
+2. Before collecting data from Twitter, Reddit data was analyzed to select the few stocks for which the project would be carried out for. In other words, five stocks were selected from Reddit data for which proce predicton would be done. The five stocks were AMC, TSLA, AMD, BABA and DKNG.
+
+3. Data from Twitter was extracted for the five selected stocks. The python library snscrape was used to extract data from Twitter. The python code for the same can be viewed at,
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1B_Extracting_data_from_twitter.ipynb_
+
+### Step 2: Data Preparation
+In order to extract sentiments from Reddit and Twitter comments for each of the five stocks on a daily basis, BERT model was used. The data preparation steps prior to this such as removing special characters, double spaces, etc., and also trimming comments to 512 characters were done and can be seen in the below python codes,
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2A_Prepare_reddit_data_for_BERT.ipynb_
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2B_Prepare_twitter_data_for_BERT.ipynb_
+
+### Step 3: Preparation of BERT model
+The BASE BERT UNCASED model from huggingface python library was used for this. BERT has to be finetuned with a local dataset prior to using it. Though that is the ideal procedure, the lack of labelled training data for Reddit meant that fine-tuning could only be done using open source twitter datasets. To overcome any impacts due to this, a total of four BERT models were used,
+- Three of which were fine-tuned with datasets mentioned in the below Table
+- The fourth model was chosen as the readily available finBERT model from huggingface library. This finBERT model was pre-trained and fine-tuned with financial corpus and financial sentiment classification.
+
+
+
+
+_Kaggle, 2019. Twitter US Airline Sentiment. [Online]. Available at: https://www.kaggle.com/crowdflower/twitter-airline-sentiment?select=Tweets.csv [Accessed 23 November 2021].
+_
+_Go, A., Bhayani, R. & Huang, L., n.d. Sentiment140. [Online]. Available at: http://help.sentiment140.com/for-students [Accessed 22 November 2021]._
