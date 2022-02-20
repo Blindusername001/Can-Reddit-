@@ -30,14 +30,26 @@ _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-pred
 3. Data from Twitter was extracted for the five selected stocks. The python library snscrape was used to extract data from Twitter. The python code for the same can be viewed at,
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1B_Extracting_data_from_twitter.ipynb_
 
+
 ### Step 2: Data Preparation
+
+
+[![name](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Images/img2.png)](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2A_Prepare_reddit_data_for_BERT.ipynb)
+
+
 In order to extract sentiments from Reddit and Twitter comments for each of the five stocks on a daily basis, BERT model was used. The data preparation steps prior to this such as removing special characters, double spaces, etc., and also trimming comments to 512 characters were done and can be seen in the below python codes,
 
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2A_Prepare_reddit_data_for_BERT.ipynb_
 
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F2B_Prepare_twitter_data_for_BERT.ipynb_
 
-### Step 3: Preparation of BERT model
+### Step 3: Preparation of BERT model and sentiment classification of comments
+
+
+[![name](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Images/img3.png)](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3A_Bert_sentiment_analysis_TwiiterAirline_Even.ipynb)
+
+
+
 The BASE BERT UNCASED model from huggingface python library was used for this. BERT has to be finetuned with a local dataset prior to using it. Though that is the ideal procedure, the lack of labelled training data for Reddit meant that fine-tuning could only be done using open source twitter datasets. To overcome any impacts due to this, a total of four BERT models were used,
 - Three of which were fine-tuned with datasets mentioned in the below Table
 - The fourth model was chosen as the readily available finBERT model from huggingface library. This finBERT model was pre-trained and fine-tuned with financial corpus and financial sentiment classification.
@@ -62,6 +74,12 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 
 
 ### Step 4: Preparation of technical stock data
+
+
+[![name](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Images/img4.png)](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F4A_Stock_technical_data.ipynb)
+
+
+
 In order to predict stock prices, along with the sentiments, a stock's technical data was also used. A total of 16 technical indicators were used. The indicators and their definitions are given in the below image. An important point to notice here is that the log return of previous day is also taken as one the technical inputs. Since stock prices are non-stationary it is a best practice to use the log returns instead of the raw previous day prices. The log return makes the stock price stationary. 
 
 The different formulae for the indicators were taken from the following research papaer,
