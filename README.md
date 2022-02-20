@@ -90,14 +90,21 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 
 ### Step 7: Data visualizations
 
-1. From each CNN-LSTM prediction, the root mean squared error was calculated to check how the prediction accuracy was.
+From each CNN-LSTM prediction, the root mean squared error was calculated to check how the prediction accuracy was. The different input data were also visualized to see if any patterns could be found with respect to the metric values.
 
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F7A_metrics_comparison.ipynb_
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F7B_Dataset_Statistics.ipynb_
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F7C_Dataset_Statistics_2.ipynb_
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F7D_Dataset_Counts_Per_Month.ipynb_
 
 
 
 ### Step 8: Performance estimation using practical scenarios
 
-2. To have a practical comparison, two scenarios were formed and calculations were made to check to see which datasets would provide better profits if stock market investments were made using predictions from the different models. To contain the number of variables and models, the average profit by investing in all five stocks were calculated for data from each of the BERT Models.
+To have a practical comparison, two scenarios were formed and calculations were made to check to see which datasets would provide better profits if stock market investments were made using predictions from the different models. To contain the number of variables and models, the average profit by investing in all five stocks were calculated for data from each of the BERT Models.
 
 The following section describes the two scenarios considered,
 Scenario 1:
@@ -109,6 +116,9 @@ This scenario assumes a moderately experienced investor who does both buying and
 Scenario 2:
 This scenario assumes a novice investor who only buys the stock if the predicted price for day n+1 is higher than the closing price for day n. Like scenario 1, the profit and loss are cumulative across the entire timeline.
 We calculated the average profit the investor would make under each scenario by investing $100 in each stock using sentiments from each BERT Model.
+
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F7E_Profit_Loss_Calculations.ipynb_
 
 
 ### Step 9:
