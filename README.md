@@ -88,10 +88,14 @@ https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predi
 https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F6D_CNN_LSTM_Predictions_for_BERT4_data.ipynb
 
 
-### Step 7: Performance estimation and data visualizations
+### Step 7: Data visualizations
 
 1. From each CNN-LSTM prediction, the root mean squared error was calculated to check how the prediction accuracy was.
 
+
+
+
+### Step 8: Performance estimation using practical scenarios
 
 2. To have a practical comparison, two scenarios were formed and calculations were made to check to see which datasets would provide better profits if stock market investments were made using predictions from the different models. To contain the number of variables and models, the average profit by investing in all five stocks were calculated for data from each of the BERT Models.
 
@@ -107,3 +111,7 @@ This scenario assumes a novice investor who only buys the stock if the predicted
 We calculated the average profit the investor would make under each scenario by investing $100 in each stock using sentiments from each BERT Model.
 
 
+### Step 9:
+
+To understand the entire study in terms of a reasearch prespective and what research questions were answered by the study, it is highly recommended to read my entire dissertation,
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Full_Dissertation_Report.pdf_
