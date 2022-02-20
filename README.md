@@ -45,3 +45,17 @@ The BASE BERT UNCASED model from huggingface python library was used for this. B
 _Kaggle, 2019. Twitter US Airline Sentiment. [Online]. Available at: https://www.kaggle.com/crowdflower/twitter-airline-sentiment?select=Tweets.csv [Accessed 23 November 2021].
 _
 _Go, A., Bhayani, R. & Huang, L., n.d. Sentiment140. [Online]. Available at: http://help.sentiment140.com/for-students [Accessed 22 November 2021]._
+
+
+After finetuning the BERT Models with respective datasets as shown in the above table, daily sentiments from both Reddit and Twitter were computed as the probability of positivity, neutrality and negativity. The respective python codes can be viewed in the below links,
+
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3A_Bert_sentiment_analysis_TwiiterAirline_Even.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3B_Bert_sentiment_analysis_TwiiterAirline_Uneven.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3C_Bert_sentiment_analysis_Sentiment140.ipynb
+
+https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F3D_finBERT_sentiment_analysis.ipynb_
+
+
+
