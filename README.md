@@ -19,7 +19,9 @@ In summary the steps involve,
  - Use the CNN-LSTM model to predict the next day stock prices by using (technical stock data + sentiments) from previous day
 <br />
 <br />
+
 ### Step 1: Data Extraction
+
 <br />
 <br />
 [![name](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Images/img1.png)](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1A_Extracting_data_from_reddit.ipynb)
