@@ -19,6 +19,9 @@ In summary the steps involve,
 
 ### Step 1: Data Extraction
 
+[![name](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/Images/img1.png)](https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1A_Extracting_data_from_reddit.ipynb)
+
+
 1. Data from Reddit was collected from the community r/wallstreetbets using PMAW library in python. PMAW extracts Reddit data from pushshift prohject which archives Reddit data close to real-time. Though Reddit's own API can be used to extract data directly from Reddit, the rate limit imposed by Reddit makes it impossbile to extract a large amount of data in a time efficient manner. The python code for Reddit data extraction can be seen in,
 _https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F1A_Extracting_data_from_reddit.ipynb_
 
