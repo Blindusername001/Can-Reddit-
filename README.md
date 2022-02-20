@@ -64,3 +64,5 @@ In order to predict stock prices, along with the sentiments, a stock's technical
 The different formulae for the indicators were taken from the following research papaer,
 _Gao, T. & Chai, Y., 2018. Improving stock closing price prediction using recurrent neural network and technical indicators. Neural computation, 30(10), pp. 2833-2854._
 
+The python code for this part can be seen in the below link,
+_https://github.com/Blindusername001/Can-Reddit-and-Twitter-data-be-used-to-predict-stock-price-movements-/blob/main/F4A_Stock_technical_data.ipynb_
